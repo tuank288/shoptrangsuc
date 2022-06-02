@@ -1,0 +1,262 @@
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: unset;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.star i {
+    color: #ffc107;
+}
+
+.container {
+    max-width: 1366px;
+    margin: auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.box {
+    padding: 20px;
+}
+
+.btn-flats {
+    display: inline-block;
+    border: 2px solid #13131a;
+    background-color: #13131a;
+    color: #fff;
+    padding: 15px 35px;
+    font-size: 15px;
+    outline: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn-hover {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-color: #fff;
+    color: #13131a;
+}
+
+.breadcumb {
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+.breadcumb a {
+    text-transform: capitalize;
+}
+
+.breadcumb a:hover {
+    color: var(--red);
+}
+
+.breadcumb span {
+    margin: 0 15px;
+}
+
+.filter-header {
+    display: block;
+    margin: 20px 0;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.filter-list > li {
+    margin-bottom: 20px;
+}
+
+.filter-toggle-box {
+    display: none;
+}
+
+.product-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-img > img {
+    max-width: 70%;
+}
+
+.product-img-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-img-item {
+    width: 90px;
+    cursor: pointer;
+    margin: 0 10px;
+    border: 1px solid var(--third-bg-color);
+}
+
+.product-img-item:hover {
+    background-color: var(--second-bg-color);
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.pagination > li > a.active {
+    background-color: var(--black);
+    color: var(--main-bg-color);
+}
+
+.pagination > li > a:hover {
+    border: 2px solid var(--black);
+}
+
+.product-info > * ~ * {
+    margin-top: 25px;
+}
+
+.product-info-detail-title {
+    font-weight: 600;
+    color: gray;
+}
+
+.product-description {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.product-info-price {
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--red);
+}
+
+.product-quantity-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.product-quantity {
+    margin: 0 10px;
+    font-size: 25px;
+}
+
+.product-quantity-btn {
+    height: 30px;
+    width: 30px;
+    background-color: gray;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.product-quantity-btn i {
+    font-size: 20px;
+    color: var(--main-bg-color);
+}
+
+.box-header {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.product-detail-description {
+    position: relative;
+    margin-bottom: 90px;
+}
+
+.product-detail-description-content {
+    text-align: justify;
+    line-height: 26px;
+    font-size: 16px;
+    height: 600px;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.product-detail-description-content.active {
+    height: max-content;
+}
+
+.btn-view-description {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*zoom img*/
+
+/* .glass {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 50%;
+    cursor: crosshair;
+    
+    /* Multiple box shadows to achieve the glass effect */
+    /* box-shadow:
+      0 0 0 7px rgba(255, 255, 255, 0.85),
+      0 0 7px 7px rgba(0, 0, 0, 0.25), 
+      inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+    
+    /* hide the glass by default */
+    /* display: none;
+}  */
+
+/* responsive */
+
+@media only screen and (max-width: 1280px) {
+
+    .filter-toggle-box {
+        display: block;
+    }
+
+    .filter-col {
+        position: fixed;
+        width: 100%;
+        background-color: #fff;
+        z-index: 98;
+        left: 100%;
+        height: 80vh;
+        overflow-y: scroll;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: left 0.2s ease-in-out;
+    }
+
+    .filter-col.active {
+        left: 0;
+    }
+
+    .pagination {
+        justify-content: center;
+    }
+    
+}
+
